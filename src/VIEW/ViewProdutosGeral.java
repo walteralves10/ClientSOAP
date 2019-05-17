@@ -65,6 +65,11 @@ public class ViewProdutosGeral extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        pesquisaUnico.setBackground(new java.awt.Color(255, 255, 255));
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        tableProdutos.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         tableProdutos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
@@ -78,8 +83,10 @@ public class ViewProdutosGeral extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tableProdutos);
 
+        comboCategoria.setBackground(new java.awt.Color(0, 0, 204));
         comboCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "GERAL", "LIMPEZA", "SOBREMESAS", "BOLACHAS", "CERVEJAS", "FRUTAS E LEGUMES", "REFRIGERANTES", "CARNES", "SMARTHPHONES", "JOGOS", "ELETRÔNICOS" }));
 
+        btnBuscaProdutos.setBackground(new java.awt.Color(255, 255, 0));
         btnBuscaProdutos.setText("Buscar");
         btnBuscaProdutos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -127,6 +134,10 @@ public class ViewProdutosGeral extends javax.swing.JFrame {
         );
 
         pesquisaUnico.addTab("Pesquisar produtos", jPanel1);
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+
+        labelIMG.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setText("Descrição:");
 
@@ -458,7 +469,7 @@ public class ViewProdutosGeral extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
